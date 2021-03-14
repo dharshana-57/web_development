@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EvenzOne</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css">
+  <style>
+    /* Make the image fully responsive */
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">EvenzOne </a>
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="services.html" target="_blank">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html" target="_blank">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html" target="_blank">Contact Us</a>
+      </ul>
+  </nav>
+  <br />
+  <header>
+    <h1>EvenzOne</h1>
+    <h3>Expect The Unexpected..</h3>
+  </header>
+  <div class="content container">
+    <p>
+      EvenzOne is an event management Company. It has organised the events all
+      around the world. A great event isn’t luck or timing. A great event is a
+      great event professional who’s spent countless hours planning,
+      re-planning and understanding the ins and outs of this exciting program.
+      It’s the opportunity to execute paired with the careful planning and
+      strategic thinking — two hallmarks of eventprofs!
+    </p>
+  </div>
+  <br>
+  <div class="w3-content w3-section" style="max-width:1000px">
+    <img class="mySlides" src="https://i.pinimg.com/originals/37/c7/ff/37c7ff0161ece1685651617c68fb6cdd.jpg"
+      style="width:100%" alt="event-image-1">
+    <img class="mySlides" src="https://i.pinimg.com/originals/e0/86/0a/e0860a93a6691f323f2a08af680900b0.jpg"
+      style="width:100%" alt="event-image-2">
+    <img class="mySlides" src="https://www.oyorooms.com/blog/wp-content/uploads/2018/03/fe-30-1080x722.jpg"
+      style="width:100%" alt="event-image-3">
+  </div>
+  <br>
+  <div class="content container">
+    <p>
+      Our Professional event managers are skilled in the technical as well as the creative and logistical implementation
+      of events. Our event coordinators specialize in developing innovative ways to inspire, communicate, and entertain.
+      Our Event Management Company has an experience of 5+ years!!!
+    </p>
+  </div>
+
+  <br><br>
+  <footer>
+    <div class="container">
+      <h3>For More Info</h3>
+      <hr>
+      <div class="text-center center-block">
+        <p class="txt-railway">- Follow Us On-</p>
+        <br />
+        <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+        <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+        <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+      </div>
+      <hr>
+    </div>
+    <br />
+  </footer>
+</body>
+</html>
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>

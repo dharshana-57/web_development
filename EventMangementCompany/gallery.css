@@ -1,0 +1,65 @@
+header{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 25px;
+    margin-top: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(128, 146, 224), 0 0 5px rgb(70, 231, 236);
+}
+body {
+    background-color:#1d1d1d !important;
+    font-family: "Asap", sans-serif;
+    color:#f4f6f7;
+    margin:10px;
+    font-size:16px;
+    background-image: url("https://i.pinimg.com/originals/62/8b/84/628b84bdb97846cce8d7685f8dbe2804.jpg");
+  }
+  
+  #demo {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  
+  .green{
+    background-color:#6fb936;
+  }
+          .thumb{
+              margin-bottom: 30px;
+          }
+          
+          .page-top{
+              margin-top:85px;
+          }
+  
+     
+  img.zoom {
+      width: 100%;
+      height: 200px;
+      border-radius:5px;
+      object-fit:cover;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+  }
+          
+   
+  .transition {
+      -webkit-transform: scale(1.2); 
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+      .modal-header {
+     
+       border-bottom: none;
+  }
+      .modal-title {
+          color:#000;
+      }
+      .modal-footer{
+        display:none;  
+      }
+  

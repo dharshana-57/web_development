@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactUs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-image: url("https://th.bing.com/th/id/OIP.y1PBXh8BJU-9zZzeYIJdugHaEK?pid=Api&rs=1");
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <header><h1 style="text-align: center;">Contact Us</h1></header>
+  <p style="text-align: center;">Swing by for a cup of coffee, or leave us a message:</p>
+  <div class="contact-details-form">
+    <form action="" name="contact" onsubmit="return validation();">
+      <label for="fname">First Name : </label>
+      <input type="text" id="fname" name="firstname" />
+      <label for="lname">Last Name : </label>
+      <input type="text" id="lname" name="lastname" />
+      <label for="email">E-mail : </label>
+      <input type="email" id="email" name="email" />
+      <label for="phoneno">Phone Number : </label>
+      <input type="tel" id="phoneno" name="phoneno" />
+      <label for="country">Country : </label>
+      <select id="country" name="country">
+        <option value="Default">--choose Country--</option>
+        <option value="india">India</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="uk">UK</option>
+        <option value="singapore">Singapore</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="eventdetails">Event Details : </label>
+      <textarea id="eventdetails" name="eventdetails" style="height: 170px"></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;align-content: flex-end;">Sign Up</button>
+</body>
+
+</html>
+<script src="scripts.js" defer></script>

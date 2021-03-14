@@ -1,0 +1,163 @@
+/* General styles in all pages */
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+header{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 25px;
+    margin-top: 0;
+}
+h1,h2 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(128, 146, 224), 0 0 5px rgb(70, 231, 236);
+  }
+  h2{
+    font-size: 30px;
+  }
+/* Home page Styles */
+div.content {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 150%;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+ Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: #3B5998;
+}
+#social-tw:hover {
+  color: #4099FF;
+}
+#social-gp:hover {
+  color: #d34836;
+}
+#social-em:hover {
+  color: #f39c12;
+}
+footer{
+background-color: #a5bef3;
+}
+/* Services Page Style */
+.weddingEv {
+  background:url("https://assets.wallpapersin4k.org/uploads/2017/04/Wallpaper-Love-You-Forever-10.jpg")  no-repeat  center center fixed;
+  padding: 30px;
+  padding-right: 250px;
+  color: black;
+}
+.weddingEv h2, .celebrityEv h2, .BusinessEv h2{
+  margin-top: 0;
+ 
+}
+.celebrityEv {
+  background:url("https://png.pngtree.com/back_origin_pic/04/01/67/ef5d6821b2c9219fcbd7fe69edaa5b50.jpg")  no-repeat  top center fixed;
+  padding: 30px;
+}
+.BusinessEv {
+  background:url("https://thumbs.dreamstime.com/z/global-business-background-world-map-blue-grey-design-d-globe-40198339.jpg")  no-repeat  center center fixed;
+  padding: 30px;
+  padding-right: 250px;
+}
+.heading {
+  font-family: 'Merienda', cursive;
+}
+.myButton {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color:#599bb3;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  padding:13px 32px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin: auto 0;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color:#408c99;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+/* ContactUs Page Styles */
+  /* Style inputs */
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+    input[type=submit] {
+    background-color: #13f1f1;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #f4f6f7;
+  }
+
+  /* Style the container/contact section */
+
+.contact-details-form {
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .contact-details-form, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
